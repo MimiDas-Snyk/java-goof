@@ -2,7 +2,6 @@ version: '2.1'
 orbs:
   snyk: snyk/snyk@2.2.0
 jobs:
-  snyk-scan:
     build:
       docker:
         - image: cimg/node:lts
@@ -11,7 +10,6 @@ jobs:
         - run: mvn install
         - snyk/scan:
             fail-on-issues: false
-        
 workflows:
   build-test-snyk:
     jobs:
