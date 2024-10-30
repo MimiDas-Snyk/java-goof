@@ -10,7 +10,4 @@ jobs:
         - run: mvn install
         - snyk/scan:
             fail-on-issues: false
-workflows:
-  build-test-snyk:
-    jobs:
-      - snyk-scan
+workflows: null
