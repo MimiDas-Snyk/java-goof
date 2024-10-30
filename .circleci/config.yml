@@ -4,7 +4,7 @@ orbs:
 jobs:
     build:
       docker:
-        - image: cimg/node:lts
+        - image: cimg/openjdk:23.0.1
       steps:
         - checkout
         - run: mvn install
