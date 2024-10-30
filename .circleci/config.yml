@@ -4,7 +4,7 @@ orbs:
 jobs:
     build:
       docker:
-        - image: cimg/openjdk:11.0.node
+        - image: cimg/openjdk:11.0
       steps:
         - checkout
         - run: mvn install
