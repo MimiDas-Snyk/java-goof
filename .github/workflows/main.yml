@@ -33,9 +33,7 @@ jobs:
         with:
           sarif_file: snyk_sast_results.json
         
-      - name: Install packages
-        run: npm install --loglevel=error
-        
+      
       - name: Run Snyk Test
         run: snyk test --all-projects
         continue-on-error: true
