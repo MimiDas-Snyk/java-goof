@@ -34,7 +34,7 @@ jobs:
           sarif_file: snyk_sast_results.json
           
       - name: Install packages
-        run: mvn install --loglevel=error  
+        run: mvn install
       
       - name: Run Snyk Test
         run: snyk test --all-projects
