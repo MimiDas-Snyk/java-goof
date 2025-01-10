@@ -8,7 +8,7 @@ on:
 
 jobs:
   monitor:
-    uses: mimidas-snyk/snyk-GHA-sharedaction-java-goof/.github/workflows/snyk-node-shared-action.yml@main
+    uses: mimidas-snyk/snyk-shared-action/.github/workflows/snyk-node-shared-action.yml@main
     with:
       SNYK_ORG: dc9e71be-cc1d-4b7a-87bf-6640adf930ee
     secrets:
