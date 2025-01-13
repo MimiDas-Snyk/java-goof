@@ -33,6 +33,12 @@ jobs:
         with:
           sarif_file: snyk_sast_results.json
           
+       - name: Upload snyk HTML report
+         uses: actions/upload-artifact@v3
+         with:
+           name: snyk_sast_result_json
+           path: snyk_sast_results.json
+          
       - name: Install packages
         run: mvn install
       
