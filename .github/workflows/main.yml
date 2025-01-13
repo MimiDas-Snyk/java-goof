@@ -34,7 +34,7 @@ jobs:
           sarif_file: snyk_sast_results.json
      
       - name: Use the Upload Artifact GitHub Action
-        uses: actions/upload-artifact@v2
+        uses: actions/upload-artifact@v3
         with:
           name: snyk_sast_results_json
           path: snyk_sast_results.json            
